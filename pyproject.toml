@@ -1,0 +1,21 @@
+[project]
+name = "totp-cli"
+version = "0.1.0"
+description = "Minimal local TOTP CLI backed by macOS Keychain"
+requires-python = ">=3.10"
+dependencies = [
+    "keyring",
+    "pyzbar",
+    "pillow",
+    "opencv-python",
+]
+
+[project.scripts]
+totp = "totp.cli:main"
+
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+include = ["totp*"]
