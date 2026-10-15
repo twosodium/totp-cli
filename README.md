@@ -7,8 +7,6 @@ Replaces phone/cloud authenticator apps for day-to-day use:
 - secrets live only in macOS Keychain; a local roster file keeps non-secret parameters
 - `code` prints the current RFC 6238 code plus seconds until expiry
 
-Design: [docs/DESIGN.md](docs/DESIGN.md). macOS only, offline, no sync.
-
 ## Setup
 
 Prerequisites: Python 3.10+, [uv](https://docs.astral.sh/uv/), and the zbar
